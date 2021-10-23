@@ -4,7 +4,7 @@ export enum ButtonType {
   None = 'None',
   Equals = 'Equals',
   Number = 'Number',
-  Operation = 'Operation'
+  Operation = 'Operation',
 }
 
 interface State {
@@ -18,7 +18,7 @@ export interface LastButtonPushed {
 
 export function useLastButtonPushed() {
   const state: State = reactive({
-    lastButtonPushed: ButtonType.None
+    lastButtonPushed: ButtonType.None,
   })
 
   // Getters
@@ -33,6 +33,6 @@ export function useLastButtonPushed() {
 
   return {
     getLastButtonPushed,
-    setLastButtonPushed
+    setLastButtonPushed,
   }
 }

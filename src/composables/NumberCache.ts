@@ -15,7 +15,7 @@ export interface NumberCache {
 export function useNumberCache() {
   const state: State = reactive({
     numberCached: 0,
-    isANumberCached: false
+    isANumberCached: false,
   })
 
   // Getters
@@ -39,6 +39,6 @@ export function useNumberCache() {
     isFull,
     getCachedNumber,
     setCacheAs,
-    emptyCache
+    emptyCache,
   }
 }

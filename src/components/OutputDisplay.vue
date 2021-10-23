@@ -10,8 +10,8 @@ import { Display } from '../composables/Display'
 
 @Options({
   props: {
-    display: Object
-  }
+    display: Object,
+  },
 })
 export default class OutputDisplay extends Vue {
   display!: Display

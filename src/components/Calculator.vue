@@ -153,8 +153,8 @@ import { useLastButtonPushed } from '../composables/LastButtonPushed'
     ButtonOperation,
     ButtonEntry,
     ButtonEquals,
-    ButtonClear
-  }
+    ButtonClear,
+  },
 })
 export default class Calculator extends Vue {
   display = setup(() => useDisplay())

@@ -15,7 +15,7 @@ export interface OperationCache {
 export function useOperationCache() {
   const state: State = reactive({
     operationCached: '',
-    isAnOperationCached: false
+    isAnOperationCached: false,
   })
 
   // Getters
@@ -39,6 +39,6 @@ export function useOperationCache() {
     isFull,
     getCachedOperation,
     setCacheAs,
-    emptyCache
+    emptyCache,
   }
 }

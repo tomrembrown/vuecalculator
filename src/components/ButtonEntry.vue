@@ -14,16 +14,16 @@ import { ButtonType, LastButtonPushed } from '../composables/LastButtonPushed'
 @Options({
   props: {
     entry: {
-      validator: function(value: string): boolean {
+      validator: function (value: string): boolean {
         return value.length === 1
       },
-      required: true
+      required: true,
     },
     display: Object,
     numberCache: Object,
     operationCache: Object,
-    lastButtonPushed: Object
-  }
+    lastButtonPushed: Object,
+  },
 })
 export default class ButtonEntry extends Vue {
   entry!: string

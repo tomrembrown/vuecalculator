@@ -16,8 +16,8 @@ import { ButtonType, LastButtonPushed } from '../composables/LastButtonPushed'
     display: Object,
     numberCache: Object,
     operationCache: Object,
-    lastButtonPushed: Object
-  }
+    lastButtonPushed: Object,
+  },
 })
 export default class ButtonClear extends Vue {
   display!: Display

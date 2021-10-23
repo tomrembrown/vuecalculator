@@ -19,8 +19,8 @@ import doCalculation from '../functions/doCalculation'
     display: Object,
     numberCache: Object,
     operationCache: Object,
-    lastButtonPushed: Object
-  }
+    lastButtonPushed: Object,
+  },
 })
 export default class ButtonEquals extends Vue {
   display!: Display

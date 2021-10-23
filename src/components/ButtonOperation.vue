@@ -17,7 +17,7 @@ import doCalculation from '../functions/doCalculation'
 @Options({
   props: {
     thisOperation: {
-      validator: function(value: string): boolean {
+      validator: function (value: string): boolean {
         // The value must match one of these strings
         return (
           ['addition', 'subtraction', 'multiplication', 'division'].indexOf(
@@ -25,13 +25,13 @@ import doCalculation from '../functions/doCalculation'
           ) !== -1
         )
       },
-      required: true
+      required: true,
     },
     display: Object,
     numberCache: Object,
     operationCache: Object,
-    lastButtonPushed: Object
-  }
+    lastButtonPushed: Object,
+  },
 })
 export default class ButtonOperation extends Vue {
   thisOperation!: string

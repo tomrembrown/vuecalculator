@@ -21,7 +21,7 @@ export function useDisplay() {
 
   const state: State = reactive({
     isToBeCachedFlag: false,
-    displayedNumberAsString: '0'
+    displayedNumberAsString: '0',
   })
 
   // Getters
@@ -73,6 +73,6 @@ export function useDisplay() {
     setToBeCachedToTrue,
     setToBeCachedToFalse,
     resetDisplayToZero,
-    addToDisplay
+    addToDisplay,
   }
 }
